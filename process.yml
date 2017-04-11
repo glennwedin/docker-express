@@ -1,0 +1,8 @@
+apps:
+  - script   : 'index.js'
+    name     : 'Service'
+    exec_mode: 'cluster'
+    instances: 4
+    env:
+        port: 5001
+        NODE_ENV: "production"
