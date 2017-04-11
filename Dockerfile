@@ -1,4 +1,4 @@
-FROM node/boron
+FROM nodesource/boron
 
 #Use pm2 for a real node environment with crash handling and graceful shutdown
 RUN npm install pm2 -g

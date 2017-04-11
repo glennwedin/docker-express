@@ -11,14 +11,14 @@ app.set('views', './views');
 app.use(bodyParser.json());
 app.use('/static', express.static('public'));
 
-//Error handling
-app.use(errors);
-
 //Routers
 app.use('/', homeRouter);
 
 //404-router
 app.use(route404);
+
+//Error handling
+app.use(errors);
 
 app.listen(process.env.PORT || 3000, function () {
 	console.log("Listening to "+process.env.PORT);

@@ -44,11 +44,12 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/failhard', function(req, res) {
-    throw 'Shit';
+    throw 'This is error';
 });
-app.use(errors);
 app.use(homeRouter)
 app.use(route404);
+app.use(errors);
+
 
 
 
