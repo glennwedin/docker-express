@@ -15,5 +15,5 @@ RUN npm install --production
 # Bundle app source
 COPY . /var/www/appdir
 
-EXPOSE 5001
-CMD [ "pm2-docker", "process.yml", "--env", "production" ]
+EXPOSE 3000
+CMD [ "pm2-docker", "process.yml" ]

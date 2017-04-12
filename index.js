@@ -22,7 +22,8 @@ app.use(errors);
 
 app.listen(process.env.PORT || 3000, function () {
 	console.log("Listening to "+process.env.PORT);
-})
+	console.log("Environment is "+process.env.NODE_ENV);
+});
 
 // Graceful shutdown - do cleanup here
 process.on('SIGINT', function() {
