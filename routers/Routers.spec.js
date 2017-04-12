@@ -44,13 +44,11 @@ app.set('view engine', 'pug');
 app.set('views', './views');
 
 app.get('/failhard', function(req, res) {
-    throw 'This is error';
+    throw "error";
 });
 app.use(homeRouter)
 app.use(route404);
 app.use(errors);
-
-
 
 
 describe("HomeController", function() {
