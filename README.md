@@ -2,7 +2,12 @@
 
 Start developement
 ```
-pm2-docker start process.yml --env dev
+npm run dev
+```
+
+Start qa/developement
+```
+npm run qa
 ```
 
 Build docker image
