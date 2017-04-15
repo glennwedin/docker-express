@@ -4,6 +4,8 @@
   "description": "A starter for running node apps in docker",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js",
+    "qa": "pm2-docker process.yml --env dev",
     "test": "npm run test-unit",
     "test-unit": "mocha ./**/*.spec.js"
   },

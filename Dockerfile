@@ -16,4 +16,4 @@ RUN npm install --production
 COPY . /var/www/appdir
 
 EXPOSE 3000
-CMD [ "pm2-docker", "process.yml" ]
+CMD [ "pm2-docker", "process.yml", "--env", "prod" ]

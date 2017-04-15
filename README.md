@@ -12,5 +12,5 @@ docker build -t dockerExpress .
 
 Start docker container
 ```
-docker run -p 80:3000 --name dockerExpress dockerExpress
+docker run -p 3000:3000 --name dockerExpress dockerExpress
 ```
