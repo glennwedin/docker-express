@@ -1,14 +1,21 @@
 # docker-express
 
-Start developement
+Pretty simple starter kit for express.js using pm2 in docker container.
+
+### Start developement
+Developement starts using nodemon.
+
 ```
 npm run dev
 ```
 
-Start qa/developement
+### Start qa
+Q/A starts the app with pm2-docker using process.yml file.
+
 ```
 npm run qa
 ```
+
 
 Build docker image
 ```

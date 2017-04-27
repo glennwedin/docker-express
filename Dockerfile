@@ -1,3 +1,4 @@
+# Node version boron (node version 6 LTS)
 FROM node:boron
 
 #Use pm2 for a real node environment with crash handling and graceful shutdown

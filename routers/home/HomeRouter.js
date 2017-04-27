@@ -7,9 +7,6 @@ router.get('/', function(req, res) {
 router.get('/next', function(req, res) {
 	res.json('next');
 });
-router.get('/fail', function(req, res) {
-	throw "eee"
-});
 
 
 module.exports = router;
