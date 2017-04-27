@@ -17,12 +17,16 @@ npm run qa
 ```
 
 
-Build docker image
+### Build docker image
+Here we build the docker image into a container and tags it with a name.
 ```
-docker build -t dockerExpress .
+docker build -t dockerexpress .
 ```
 
-Start docker container
+### Start docker container
+Here we start the docker container we buildt above and maps the hosts (our server) port 3000 to the exposed port in our dockerfile.
+The express app must be configured to listen to the exposed port.
+
 ```
 docker run -p 3000:3000 --name dockerExpress dockerExpress
 ```
