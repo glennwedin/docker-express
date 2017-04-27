@@ -28,5 +28,5 @@ Here we start the docker container we buildt above and maps the hosts (our serve
 The express app must be configured to listen to the exposed port.
 
 ```
-docker run -p 3000:3000 --name dockerExpress dockerExpress
+docker run -p 3000:3000 --name dockerexpress dockerexpress
 ```
