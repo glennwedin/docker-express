@@ -19,6 +19,9 @@ app.use(route404);
 
 //Error handling
 app.use(errors);
+if (app.get('env') === 'development') {
+	app.locals.pretty = true;
+}
 
 app.listen(process.env.PORT || 3000, function () {
 	console.log("Listening to "+(process.env.PORT || 3000));

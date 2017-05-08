@@ -5,7 +5,7 @@ router.get('/', function(req, res) {
 	res.json({'home': true});
 });
 router.get('/next', function(req, res) {
-	res.json('next');
+	res.json('next')
 });
 
 
